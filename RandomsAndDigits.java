@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * Do one from SET A and one from SET B, or all of them if you can. Delete the ones you do not attempt, or leave them.
  *
- * @author  (your name here)
+ * @author Kaden Gurnee
  */
 public class RandomsAndDigits {
 
@@ -28,8 +28,14 @@ public class RandomsAndDigits {
         //
         // Hint: one die is a random integer from 1 to 6.
         //       range = max - min + 1.  Roll the three dice separately.
+        int a6 = (int)(Math.random() * 6) + 1;
+        int b6 = (int)(Math.random() * 6) + 1;
+        System.out.println("Die 1: " + a6 + "\nDie 2: " + b6 + "\nTotal: " + (a6+b6));
 
-
+        int c6 = (int)(Math.random() * 6) + 1;
+        int d6 = (int)(Math.random() * 6) + 1;
+        int e6 = (int)(Math.random() * 6) + 1;
+        System.out.println("Ability score: " + (c6+d6+e6));
         // ----- 2. Random Color Chip --------------------------------------
         // Three random values from 0 to 255 - red, green, blue.
         // Print the three values, then  rgb(r, g, b), then the grey value,
@@ -61,14 +67,14 @@ public class RandomsAndDigits {
         // Hint: you know how to get the last digit. The second-to-last is
         //       the same move, after dividing the number down by 10 first.
 
-
-        // ----- 5. Reverse It ---------------------------------------------
-        // Print the same four-digit number backwards, as a NUMBER.
-        //   5087  ->  7805
-        //
-        // Hint: you already pulled the digits apart in problem 4. Rebuild a
-        //       number from them, each one multiplied by the place value you
-        //       want it to land in.
+        System.out.println("Number: ");
+        int number = keyboard.nextInt();
+        int d1 = number % 10;
+        int d2 = number / 10 % 10;
+        int d3 = number / 100 % 10;
+        int d4 = number / 1000 % 10;
+        System.out.println(number + "  ->  " + d4 + " - " + d3 + " - " + d2 + " - " + d1);
+        System.out.println("The digits add up to " + (d4+d3+d2+d1));
 
 
         // ----- 6. Split the Check  (the other hard one) ------------------
