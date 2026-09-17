@@ -88,7 +88,7 @@ public class RandomsAndDigits {
         //
         // The + 0.5 is not decoration. Try 40.12 with it and without it -
         // 40.12 * 100 is 4011.9999999999995 in a double, and the cast throws
-        // the rest away. That is round-off error in real money.
+        // the rest away. That is round-off error in real money
 
     }
 }
