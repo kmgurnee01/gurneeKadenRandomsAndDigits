@@ -56,6 +56,16 @@ public class RandomsAndDigits {
         //
         // Watch what happens when you print three chars added together.
 
+        char letter1 = (char)((int)(Math.random() * 26) + 65);
+        char letter2 = (char)((int)(Math.random() * 26) + 65);
+        char letter3 = (char)((int)(Math.random() * 26) + 65);
+
+        int num1 = (int)(Math.random() * 10);
+        int num2 = (int)(Math.random() * 10);
+        int num3 = (int)(Math.random() * 10);
+
+        System.out.println("" + letter1 + letter2 + letter3 + " " + num1 + num2 + num3);
+
 
         // ========== SET B - digits and money ============================
 
