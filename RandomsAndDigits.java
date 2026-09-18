@@ -39,7 +39,7 @@ public class RandomsAndDigits {
         System.out.println("Ability score 1: " + (score1));
         System.out.println("Ability score 2: " + (score2));
         System.out.println("Ability score 3: " + (score3));
-        System.out.println("Ability score 2: " + (score4));
+        System.out.println("Ability score 4: " + (score4));
         // ----- 2. Random Color Chip --------------------------------------
         // Three random values from 0 to 255 - red, green, blue.
         // Print the three values, then  rgb(r, g, b), then the grey value,
