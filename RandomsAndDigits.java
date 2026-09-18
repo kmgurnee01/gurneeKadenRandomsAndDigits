@@ -32,10 +32,14 @@ public class RandomsAndDigits {
         int b6 = (int)(Math.random() * 6) + 1;
         System.out.println("Die 1: " + a6 + "\nDie 2: " + b6 + "\nTotal: " + (a6+b6));
 
-        int c6 = (int)(Math.random() * 6) + 1;
-        int d6 = (int)(Math.random() * 6) + 1;
-        int e6 = (int)(Math.random() * 6) + 1;
-        System.out.println("Ability score: " + (c6+d6+e6));
+        int score1 = ((int)(Math.random() * 6) + 1) + ((int)(Math.random() * 6) + 1) + ((int)(Math.random() * 6) + 1);
+        int score2 = ((int)(Math.random() * 6) + 1) + ((int)(Math.random() * 6) + 1) + ((int)(Math.random() * 6) + 1);
+        int score3 = ((int)(Math.random() * 6) + 1) + ((int)(Math.random() * 6) + 1) + ((int)(Math.random() * 6) + 1);
+        int score4 = ((int)(Math.random() * 6) + 1) + ((int)(Math.random() * 6) + 1) + ((int)(Math.random() * 6) + 1);
+        System.out.println("Ability score 1: " + (score1));
+        System.out.println("Ability score 2: " + (score2));
+        System.out.println("Ability score 3: " + (score3));
+        System.out.println("Ability score 2: " + (score4));
         // ----- 2. Random Color Chip --------------------------------------
         // Three random values from 0 to 255 - red, green, blue.
         // Print the three values, then  rgb(r, g, b), then the grey value,
